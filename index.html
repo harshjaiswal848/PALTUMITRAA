@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaltuMitra - Animal Adoption Platform</title>
+    
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo h1 {
+            font-size: 2rem;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section styling */
+        section {
+            padding: 40px 20px;
+            background-color: #ffffff; /* Background for sections */
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* CTA Buttons */
+        .btn {
+            display: inline-block;
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .btn:hover {
+            background-color: #e65c00;
+        }
+
+        /* Featured Animals Section */
+        .featured-animals {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .animal-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            width: 200px;
+        }
+
+        .animal-card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .animal-card h3 {
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+
+        /* Form styles */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input, form textarea, form select {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PaltuMitra</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#welcome">Home</a></li>
+                <li><a href="#adopt">Adopt</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#volunteer">Volunteer</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section id="welcome">
+        <h2>Welcome to PaltuMitra</h2>
+        <p>Your one-stop solution for animal adoption and care.</p>
+        <input type="text" placeholder="Search for animals..." />
+        <div>
+            <a href="#adopt" class="btn">Adopt</a>
+            <a href="#donate" class="btn">Donate</a>
+            <a href="#volunteer" class="btn">Volunteer</a>
+        </div>
+    </section>
+
+    <!-- Featured Animals Section -->
+    <section id="featured">
+        <h2>Meet Our Pets</h2>
+        <div class="featured-animals">
+            <div class="animal-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHeGQ5rcuSp1rWZpa_s2oa2hNscLhBZidU0R4h91KPtVpgyKHG" alt="Dog 1">
+                <h3>Buddy</h3>
+                <p>Breed: Labrador Retriever</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+            <div class="animal-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHeGQ5rcuSp1rWZpa_s2oa2hNscLhBZidU0R4h91KPtVpgyKHG" alt="Dog 2">
+                <h3>Max</h3>
+                <p>Breed: German Shepherd</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+            <div class="animal-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxH7OhiRStbOxBUPyyBq4hsnP1IlgG4cF2qS6D0qHJOW5cmXYl" alt="Dog 3">
+                <h3>Rex</h3>
+                <p>Breed: Golden Retriever</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+            <div class="animal-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSrqKxhlXfxyEwiZ3JZsYF7amXEP3NuVuW4MQSNdZGgYX_JLaO" alt="Dog 4">
+                <h3>Bella</h3>
+                <p>Breed: Poodle</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section id="success-stories">
+        <h2>Success Stories</h2>
+        <p>Check out our recent adoption stories!</p>
+        <p><strong>Oliver's Journey:</strong> Oliver, a rescued kitten, found his forever home last month. His new family says he brings joy and laughter every day!</p>
+        <p><strong>Charlie the Brave:</strong> Charlie was adopted by a loving family and is now thriving in his new environment. His new owner reports that he is a playful and loving companion.</p>
+    </section>
+
+    <!-- Adoption Process Section -->
+    <section id="adopt">
+        <h2>Adoption Process</h2>
+        <h3>Application Form</h3>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Tell us why you want to adopt..." required></textarea>
+            <button type="submit" class="btn">Submit Application</button>
+        </form>
+        <h3>Application Tracker</h3>
+        <p>Check the status of your application <a href="#">here</a>.</p>
+        <h3>Schedule an Appointment</h3>
+        <form>
+            <input type="date" required>
+            <input type="time" required>
+            <button type="submit" class="btn">Book Appointment</button>
+        </form>
+    </section>
+
+    <!-- Donate Section -->
+    <section id="donate">
+        <h2>Donate</h2>
+        <p>Help us care for animals in need. You can donate in various ways:</p>
+        <ul>
+            <li><strong>One-time donation:</strong> Support our efforts with a one-time gift.</li>
+            <li><strong>Monthly giving:</strong> Join our monthly giving program.</li>
+        </ul>
+        <a href="#" class="btn">Donate Now</a>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section id="volunteer">
+        <h2>Volunteer</h2>
+        <p>Join us as a volunteer and help us make a difference!</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Tell us about your volunteering interests..." required></textarea>
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+    </section>
+
+    <!-- Educational Resources Section -->
+    <section id="resources">
+        <h2>Educational Resources</h2>
+        <h3>Pet Care Guides</h3>
+        <p>Access our articles and videos on pet care and responsible ownership.</p>
+        <h3>FAQs</h3>
+        <p>Have questions? Check our <a href="#">FAQs</a> for answers!</p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p>Follow us on social media:</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PaltuMitra. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
