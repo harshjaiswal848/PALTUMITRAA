@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Resources - PaltuMitra</title>
+
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo h1 {
+            font-size: 2rem;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main section */
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Pet Care Guides */
+        .pet-care-guides {
+            margin-top: 20px;
+            border-top: 2px solid #ff6600;
+            padding-top: 20px;
+        }
+
+        .guide {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #e8e8e8;
+        }
+
+        .guide h3 {
+            margin-bottom: 10px;
+        }
+
+        /* FAQs Section */
+        .faqs {
+            margin-top: 40px;
+            border-top: 2px solid #ff6600;
+            padding-top: 20px;
+        }
+
+        .faq {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #e8e8e8;
+        }
+
+        .faq h4 {
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+
+        .faq p {
+            display: none; /* Hidden by default */
+            margin: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PaltuMitra</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/hp.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/animal_listing.html#success">Animals</a></li>
+                <li><a href="http://127.0.0.1:5500/success_stories.html">Success Stories</a></li>
+                <li><a href="http://127.0.0.1:5500/donate.html">Donate</a></li>
+                <li><a href="http://127.0.0.1:5500/volunteer.html">Volunteer</a></li>
+                <li><a href="http://127.0.0.1:5500/educational.html">Resources</a></li>
+                <li><a href="http://127.0.0.1:5500/contact.html">Contact Us</a></li>
+                <li><a href="http://127.0.0.1:5500/support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Educational Resources</h2>
+
+        <div class="pet-care-guides">
+            <h3>Pet Care Guides</h3>
+            <div class="guide">
+                <h4>Training Your Dog</h4>
+                <p>Learn the basic commands and techniques to train your dog effectively.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="guide">
+                <h4>Healthcare for Pets</h4>
+                <p>Understand the essential health care practices for your pet's well-being.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="guide">
+                <h4>Responsible Pet Ownership</h4>
+                <p>Explore the responsibilities that come with having a pet.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+
+        <div class="faqs">
+            <h3>FAQs</h3>
+            <div class="faq">
+                <h4>How do I adopt a pet?</h4>
+                <p>The adoption process involves filling out an application form, meeting the pet, and completing the necessary paperwork.</p>
+            </div>
+            <div class="faq">
+                <h4>What should I do if I find a lost pet?</h4>
+                <p>If you find a lost pet, try to locate its owner by checking for identification tags, posting on social media, and contacting local shelters.</p>
+            </div>
+            <div class="faq">
+                <h4>What vaccinations do pets need?</h4>
+                <p>Pets need a variety of vaccinations depending on their species and lifestyle. Consult your veterinarian for specific recommendations.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PaltuMitra. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Script to toggle FAQ answers
+        document.querySelectorAll('.faq h4').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                if (answer.style.display === 'none' || answer.style.display === '') {
+                    answer.style.display = 'block';
+                } else {
+                    answer.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
