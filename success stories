@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-launch Support - PaltuMitra</title>
+
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo h1 {
+            font-size: 2rem;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main section */
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Feedback Form */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #e65c00;
+        }
+
+        /* Updates and Maintenance Section */
+        .updates {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            border-left: 5px solid #ff6600;
+        }
+
+        .updates p {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PaltuMitra</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/hp.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/animal_listing.html#success">Animals</a></li>
+                <li><a href="http://127.0.0.1:5500/success_stories.html">Success Stories</a></li>
+                <li><a href="http://127.0.0.1:5500/donate.html">Donate</a></li>
+                <li><a href="http://127.0.0.1:5500/volunteer.html">Volunteer</a></li>
+                <li><a href="http://127.0.0.1:5500/educational.html">Resources</a></li>
+                <li><a href="http://127.0.0.1:5500/contact.html">Contact Us</a></li>
+                <li><a href="http://127.0.0.1:5500/support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+<section class="success-stories">
+    <h2>Success Stories</h2>
+    <div class="stories-grid">
+        <div class="story-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFbUWvqj2SReWyJSm4MPeWoK66_cxHqQOHGw&s" alt="Charlie">
+            <h3>Charlie & Sarah</h3>
+            <p>Charlie, a playful Beagle, found his forever home with Sarah. Their bond grew stronger with every walk in the park!</p>
+        </div>
+        <div class="story-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUIxPbf2-g7ZY_yUxiaxwaS0ARUyos58EhbA&s" alt="Milo">
+            <h3>Milo & John</h3>
+            <p>Milo, a loving Golden Retriever, now enjoys a cozy life with John, who has given him all the love he deserves.</p>
+        </div>
+        <div class="story-card">
+            <img src="https://us.images.westend61.de/0000782538pw/portrait-of-little-girl-holding-tabby-kitten-NMSF00052.jpg" alt="Lucy">
+            <h3>Lucy & Emma</h3>
+            <p>Lucy, a shy tabby cat, opened up to Emma after just a few days, becoming her best friend in no time!</p>
+        </div>
+        <div class="story-card">
+            <img src="https://i.ytimg.com/vi/ZvRYSQ7SLWE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBAkYC_stljKfpOTtF2r1x_JHspbA" alt="Rocky">
+            <h3>Rocky & Mark</h3>
+            <p>Rocky, a spirited Corgi, has brought endless joy to Mark’s life. Together, they are an unstoppable duo!</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Success Stories Section Styling */
+    .success-stories {
+        padding: 40px 20px;
+        text-align: center;
+        background-color: #ffffff;
+        margin-top: 20px;
+    }
+
+    .success-stories h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+
+    .stories-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px; /* Space between cards */
+    }
+
+    .story-card {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        width: 220px;
+    }
+
+    .story-card img {
+        width: 100%;
+        border-radius: 10px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .story-card h3 {
+        margin: 10px 0;
+    }
+
+    .story-card p {
+        color: #555;
+    }
+</style>
