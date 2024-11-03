@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-launch Support - PaltuMitra</title>
+
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo h1 {
+            font-size: 2rem;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main section */
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Feedback Form */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #e65c00;
+        }
+
+        /* Updates and Maintenance Section */
+        .updates {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            border-left: 5px solid #ff6600;
+        }
+
+        .updates p {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PaltuMitra</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/hp.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/animal_listing.html#success">Animals</a></li>
+                <li><a href="http://127.0.0.1:5500/success_stories.html">Success Stories</a></li>
+                <li><a href="http://127.0.0.1:5500/donate.html">Donate</a></li>
+                <li><a href="http://127.0.0.1:5500/volunteer.html">Volunteer</a></li>
+                <li><a href="http://127.0.0.1:5500/educational.html">Resources</a></li>
+                <li><a href="http://127.0.0.1:5500/contact.html">Contact Us</a></li>
+                <li><a href="http://127.0.0.1:5500/support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Post-launch Support</h2>
+
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="5" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <div class="updates">
+            <h3>Our Commitment to Support and Maintenance</h3>
+            <p>We value your feedback and continuously strive to improve our platform.</p>
+            <p>Regular updates will include:</p>
+            <ul>
+                <li>New features to enhance user experience.</li>
+                <li>Bug fixes to ensure smooth operation.</li>
+                <li>Security updates to keep your data safe.</li>
+            </ul>
+            <p>Thank you for being a part of the PaltuMitra community!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PaltuMitra. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
