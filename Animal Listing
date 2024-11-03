@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Listings - PaltuMitra</title>
+
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo h1 {
+            font-size: 2rem;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Filters Section */
+        .filters {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #e8e8e8;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .filters input,
+        .filters select {
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .filters button {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .filters button:hover {
+            background-color: #e65c00;
+        }
+
+        /* Animal Listings Section */
+        .animal-listings {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .animal-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .animal-card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .animal-card h3 {
+            margin: 10px 0;
+        }
+
+        .animal-card p {
+            color: #555;
+        }
+
+        .animal-card .btn-adopt {
+            display: inline-block;
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .animal-card .btn-adopt:hover {
+            background-color: #e65c00;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PaltuMitra</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/hp.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/animal_listing.html#success">Animals</a></li>
+                <li><a href="http://127.0.0.1:5500/success_stories.html">Success Stories</a></li>
+                <li><a href="http://127.0.0.1:5500/donate.html">Donate</a></li>
+                <li><a href="http://127.0.0.1:5500/volunteer.html">Volunteer</a></li>
+                <li><a href="http://127.0.0.1:5500/educational.html">Resources</a></li>
+                <li><a href="http://127.0.0.1:5500/contact.html">Contact Us</a></li>
+                <li><a href="http://127.0.0.1:5500/support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Filters Section -->
+    <section class="filters">
+        <div>
+            <input type="text" placeholder="Search by Name" />
+            <select>
+                <option value="">Select Breed</option>
+                <option value="labrador">Labrador</option>
+                <option value="german">German Shepherd</option>
+                <option value="golden">Golden Retriever</option>
+                <option value="poodle">Poodle</option>
+            </select>
+            <select>
+                <option value="">Select Size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <button>Filter</button>
+        </div>
+    </section>
+
+    <!-- Animal Listings Section -->
+    <section class="animal-listings" id="animal-listings">
+        <h2>Available Animals for Adoption</h2>
+        <div class="animal-card">
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqRNGjpgj_trfUKqFwEvpcq1ttRPzgmQXLNQJgKUIMS0lqDKuY" alt="Dog 1">
+            <h3>Buddy</h3>
+            <p>Breed: Labrador Retriever</p>
+            <p>Age: 2 years</p>
+            <p>Health Status: Vaccinated</p>
+            <p>Shelter: Happy Paws Shelter</p>
+            <a href="#" class="btn-adopt">Adopt Buddy</a>
+        </div>
+        <div class="animal-card">
+            <img src="https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg" alt="Dog 2">
+            <h3>Max</h3>
+            <p>Breed: German Shepherd</p>
+            <p>Age: 3 years</p>
+            <p>Health Status: Neutered</p>
+            <p>Shelter: Loving Hearts Shelter</p>
+            <a href="#" class="btn-adopt">Adopt Max</a>
+        </div>
+        <div class="animal-card">
+            <img src="https://s3.amazonaws.com/petstablished-app-beta/uploads/image/image/4463683/Faith-1.jpg" alt="Dog 3">
+            <h3>Rex</h3>
+            <p>Breed: Golden Retriever</p>
+            <p>Age: 1 year</p>
+            <p>Health Status: Vaccinated</p>
+            <p>Shelter: Safe Haven Shelter</p>
+            <a href="#" class="btn-adopt">Adopt Rex</a>
+        </div>
+        <div class="animal-card">
+            <img src="https://puppiezo.com/wp-content/uploads/2023/06/IMG_1833.jpeg" alt="Dog 4">
+            <h3>Bella</h3>
+            <p>Breed: Poodle</p>
+            <p>Age: 4 years</p>
+            <p>Health Status: Healthy</p>
+            <p>Shelter: Friendly Tails Shelter</p>
+            <a href="#" class="btn-adopt">Adopt Bella</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PaltuMitra. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
