@@ -59,58 +59,22 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Adoption Process</h2>
+
+        <form action="submit_application.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="reason" placeholder="Tell us why you want to adopt..." rows="4" required></textarea>
+            <button type="submit">Submit Application</button>
+        </form>
+
+        <form action="book_appointment.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="date" name="appointment_date" required>
+            <input type="time" name="appointment_time" required>
+            <button type="submit">Book Appointment</button>
+        </form>
         
-        <!-- Application Form -->
-        <div>
-            <h3>Application Form</h3>
-            <input type="text" placeholder="Your Name" id="name">
-            <input type="email" placeholder="Your Email" id="email">
-            <textarea placeholder="Tell us why you want to adopt..." rows="4" id="reason"></textarea>
-            <button onclick="submitApplication()">Submit Application</button>
-        </div>
-
-
-        <!-- Schedule an Appointment -->
-        <div>
-            <h3>Schedule an Appointment</h3>
-            <input type="date" id="appointment-date">
-            <input type="time" id="appointment-time">
-            <button onclick="bookAppointment()">Book Appointment</button>
-        </div>
-    </div>
-
-
-    <script>
-        function submitApplication() {
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const reason = document.getElementById("reason").value;
-            if (name && email && reason) {
-                alert("Application submitted successfully!");
-            } else {
-                alert("Please fill out all fields.");
-            }
-        }
-
-        function bookAppointment() {
-            const date = document.getElementById("appointment-date").value;
-            const time = document.getElementById("appointment-time").value;
-            if (date && time) {
-                alert("Appointment booked for " + date + " at " + time);
-            } else {
-                alert("Please select a date and time.");
-            }
-        }
-
-        function showStatusPopup() {
-            document.getElementById("statusPopup").style.display = "block";
-        }
-
-        function closeStatusPopup() {
-            document.getElementById("statusPopup").style.display = "none";
-        }
-    </script>
+       
 </body>
 </html>
